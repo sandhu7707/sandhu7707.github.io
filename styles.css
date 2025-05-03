@@ -1,0 +1,144 @@
+
+
+.introduction {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.introduction h2 {
+    margin-top: 0;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: minmax(30vh, auto) minmax(20vh, auto) minmax(30vh, auto);
+    grid-template-columns: minmax(auto, 20vw) minmax(60vw, auto) minmax(auto, 20vw);
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+main{
+    justify-self: left;
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+}
+
+main ul li{
+    list-style-type: none;
+    margin-bottom: 1.5em;
+}
+
+
+.collapsible-section{
+    padding: 20px;
+    transition: .15s; 
+}
+
+.collapsible-section * {
+    transition: inherit;
+}
+
+main:not(:hover){
+    transition: 0s;
+    transition-property: font-size;
+}
+
+main:hover .collapsible-section:not(:hover):not(:target){
+    font-size: 0;
+    /* visibility: collapse; */
+    width: 0;
+    padding: 0;
+    transition: .15s;
+}
+
+.collapsible-section:not(:hover):not(:target)  .collapsible-content:not(:hover):not(:target) {
+    visibility: collapse;
+    font-size: 0;
+    height: 0;
+    width: 0;
+    transition: .15s;
+    transition-property: width, height;
+}
+
+.collapsible-section:not(:hover):not(:target) .heading{
+    font-size: large;
+}
+
+.collapsible-section:where(:hover,:target) {
+    /* font-size: inherit; */
+    text-align: left;
+    width: 55vw;
+    transition: .15s;
+}
+
+.collapsible-content{
+    text-align: left;
+    transition: .25s;
+    transition-property: font-size;
+}
+
+#contact-me {
+    margin-top: 5vh;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.contact-form, form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-me .contact-details {
+    width: 50%;
+    display: flex;
+}
+
+#contact-me h2, .message {
+    width: 100%;
+    display: flex;
+    margin: 1em 0;
+}
+
+#contact-me :is(textarea, input) {
+    flex-grow: 1;
+    margin-right: 15px;
+    border: solid 1px #00000047;
+    border-radius: 5px;
+}
+
+#contact-me label {
+    width: 4em;
+}
+
+.button-container{
+    height: 40px;
+    width: 40px;;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #00000047;
+    border-radius: 5px;
+    background-image: url("contact-button.png");
+    background-size: contain;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+}
