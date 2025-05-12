@@ -226,3 +226,7 @@ button:hover {
     left: -10vw;
     top: 0;
 }
+
+img{
+    width: 100%;
+}
