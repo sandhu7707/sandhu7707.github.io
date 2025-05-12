@@ -33,7 +33,7 @@ main{
     grid-auto-columns: 1fr;
 }
 
-main ul li{
+.collapsible-content ul li{
     list-style-type: none;
     margin-bottom: 1.5em;
 }
@@ -141,4 +141,14 @@ button:hover {
     width: 40px;
     height: 40px;
     transition: .5s;
+}
+
+.project-links {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: 1fr 2fr;
+}
+
+#github-projects{
+    margin-top: 20px;
 }
