@@ -1,0 +1,10 @@
+<svg height="23" width="20" viewBox="0 0 20 33" xmlns="http://www.w3.org/2000/svg">
+  <polyline  style="fill:none; stroke:black; stroke-width:2">
+    <animate
+             attributeName="points"
+             dur="1s"
+             values="0,10 10,20 20,10;0,20 10,30 20,20;0,10 10,20 20,10"
+             repeatCount="indefinite"
+             ></animate>
+  </polyline>
+</svg>

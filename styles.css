@@ -70,12 +70,12 @@ main{
     transition: inherit;
 }
 
-main:not(:hover){
+/* main:not(:hover){
     transition: 0s;
     transition-property: font-size;
-}
+} */
 
-main:hover .collapsible-section:not(:hover):not(:target){
+main:hover .collapsible-section:not(:hover):not(:target):not(:focus){
     font-size: 0;
     /* visibility: collapse; */
     width: 0;
@@ -83,7 +83,7 @@ main:hover .collapsible-section:not(:hover):not(:target){
     transition: .15s;
 }
 
-.collapsible-section:not(:hover):not(:target)  .collapsible-content:not(:hover):not(:target) {
+.collapsible-section:not(:hover):not(:target):not(:focus)  .collapsible-content:not(:hover):not(:target) {
     visibility: collapse;
     font-size: 0;
     height: 0;
@@ -96,25 +96,30 @@ main:hover .collapsible-section:not(:hover):not(:target){
     height: 30px;
 }
 
-.collapsible-section:not(:hover):not(:target) .blink{
+.collapsible-section:not(:hover):not(:target):not(:focus) .blink::after{
+    content: url("dropdown.svg");
+    margin-left: 5px;
+}
+
+.collapsible-section:not(:hover):not(:target):not(:focus) .blink{
 
     font-size: large;
-    animation: blink 1s linear infinite;
-    min-height: fit-content;
+    /* animation: blink 1s linear infinite;
+    min-height: fit-content; */
 }
 
 /* .heading .blink */
 
-@keyframes blink{
+/* @keyframes blink{
     0% {font-size: 18px;}
     25% {font-size: 17px;}
     50% {font-size: 16px;}
     75% {font-size: 17px;}
     100% {font-size: 18px;}
-}
+} */
+ */
 
-
-.collapsible-section:where(:hover,:target) {
+.collapsible-section:where(:hover,:target,:focus) {
     /* font-size: inherit; */
     text-align: left;
     width: 55vw;
