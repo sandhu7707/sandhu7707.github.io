@@ -94,6 +94,7 @@ main:hover .collapsible-section:not(:hover):not(:target):not(:focus){
 
 .collapsible-section .heading{
     height: 30px;
+    width: 200px;
 }
 
 .collapsible-section:not(:hover):not(:target):not(:focus) .blink::after{
