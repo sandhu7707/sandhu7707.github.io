@@ -191,6 +191,7 @@ button:hover {
 
 .project-links {
     display: grid;
+    align-items: center;
     width: 50vw;
     grid-template-columns: 1fr 2fr;
 }
