@@ -62,7 +62,6 @@ main{
 
 
 .collapsible-section{
-    padding: 20px;
     transition: .15s; 
 }
 
@@ -70,18 +69,7 @@ main{
     transition: inherit;
 }
 
-/* main:not(:hover){
-    transition: 0s;
-    transition-property: font-size;
-} */
 
-main:hover .collapsible-section:not(:hover):not(:target):not(:focus){
-    font-size: 0;
-    /* visibility: collapse; */
-    width: 0;
-    padding: 0;
-    transition: .15s;
-}
 
 .collapsible-section:not(:hover):not(:target):not(:focus)  .collapsible-content:not(:hover):not(:target) {
     visibility: collapse;
