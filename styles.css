@@ -31,7 +31,7 @@ html{
 
 body {
     display: grid;
-    grid-template-rows: minmax(30vh, auto) minmax(20vh, auto) minmax(30vh, auto);
+    grid-template-rows: minmax(5vh, auto) minmax(20vh, auto) minmax(30vh, auto);
     grid-template-columns: minmax(auto, 20vw) minmax(60vw, auto) minmax(auto, 20vw);
     justify-content: center;
     align-items: center;
@@ -178,10 +178,9 @@ button:hover {
 }
 
 .project-links {
-    display: grid;
-    align-items: center;
-    width: 50vw;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #github-projects{
