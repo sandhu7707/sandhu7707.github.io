@@ -3,7 +3,8 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.example.sabzi_wala_app",
-    "sha256_cert_fingerprints":
-    ["4d:70:e8:17:8f:7f:97:43:60:3f:53:38:33:8d:d6:b2:8d:29:12:cb:ae:97:95:e4:b5:de:0b:e1:96:8d:b2:86"]
+    "sha256_cert_fingerprints": [
+      "4D:70:E8:17:8F:7F:97:43:60:3F:53:38:33:8D:D6:B2:8D:29:12:CB:AE:97:95:E4:B5:DE:0B:E1:96:8D:B2:86"
+    ]
   }
 }]
